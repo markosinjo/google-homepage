@@ -1,21 +1,68 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+    padding-right: 23px;
+}
+
+#gmail, #images {
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    align-self: center;
+}
+
+#images {
+    padding: 0 15px;
+}
+
+#gmail:hover, #images:hover {
+    opacity: .85;
+    text-decoration: underline;
+}
+
+.app-icon {
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+    padding-right: 15px;
+}
+
+.app-icon:hover {
+    opacity: 1;
+}
+
+.sign-in {
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    cursor: default;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 28px;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    padding: 0 12px;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    padding-top: 110px;
 }
-
-.test {
-    background: red;
-    height: 100x;
-    width: 100px;
-}
-
 .search-bar {
     display: flex;
     align-items: center;
+    width: 550px;
+    padding-top: 20px;
 }
 
 .magnifying-glass {
@@ -24,20 +71,39 @@ main {
     padding-right: 13px;
 }
 
-/*
 .search {
-    background-color: transparent;
-    border: none;
+    height: 37px;
+    width: 100%;
     margin: 0;
-        margin-top: 0px;
     padding: 0;
-    color: rgba(0,0,0,.87);
-    word-wrap: break-word;
-    outline: none;
-    display: flex;
-    flex: 100%;
-    tap-highlight-color: transparent;
-    margin-top: -37px;
-    height: 34px;
     font-size: 16px;
+    color: rgba(0,0,0,.87);
+    border: none;
+}
+
+.search-buttons {
+    width: 550px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+button {
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    text-align: center;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
